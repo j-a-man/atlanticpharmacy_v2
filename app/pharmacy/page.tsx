@@ -42,7 +42,7 @@ export default function PharmacyPage() {
       </section>
 
       {/* Image Carousel */}
-      <section className="pb-24">
+      <section className="pt-12 pb-12 bg-muted/30">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="relative aspect-[16/9] bg-muted overflow-hidden rounded-lg shadow-md">
             <img
@@ -88,7 +88,7 @@ export default function PharmacyPage() {
       </section>
 
       {/* Location Section */}
-      <section className="py-24 px-6 lg:px-12 bg-muted/30">
+      <section className="py-24 px-6 lg:px-12">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-xs tracking-[0.25em] text-muted-foreground mb-4">LOCATIONS</h2>

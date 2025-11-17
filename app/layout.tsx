@@ -7,6 +7,7 @@ import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { Navigation } from "@/components/navigation"
 import { Suspense } from "react"
+import { Footer } from "@/components/footer"
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -32,6 +33,9 @@ export default function RootLayout({
           <Navigation />
           {children}
         </Suspense>
+
+        <Footer />
+        
         <Analytics />
       </body>
     </html>
