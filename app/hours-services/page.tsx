@@ -1,4 +1,4 @@
-import { Clock, FileText, Printer, CreditCard, Ticket, Globe } from "lucide-react"
+import { Clock, FileText, Printer, CreditCard, Ticket, Globe, Car } from "lucide-react"
 
 export default function HoursServicesPage() {
   return (
@@ -76,8 +76,18 @@ export default function HoursServicesPage() {
               },
               {
                 icon: Ticket,
-                title: "PLAY LOTTERY AND SCRATCH-OFFS",
-                description: "Official lottery ticket sales and redemption services available.",
+                title: "OTC CARDS",
+                description: "We accept OTC Cards from customers.",
+              },
+              {
+                icon: Printer,
+                title: "PHOTOCOPY",
+                description: "We offer photocopy machine access at 10 cents per page.",
+              },
+              {
+                icon: Car,
+                title: "FREE PARKING",
+                description: "We offer free parking in the parking lot outside.",
               },
             ].map((service, index) => (
               <div
@@ -100,7 +110,7 @@ export default function HoursServicesPage() {
             <Globe className="h-10 w-10 mx-auto" />
             <h2 className="text-xs tracking-[0.25em]">MULTILINGUAL SUPPORT</h2>
             <p className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-light leading-tight">
-              We speak English, Spanish, Mandarin & Cantonese
+              We speak English, Spanish, Mandarin, & Cantonese
             </p>
             <p className="text-sm tracking-[0.05em] leading-relaxed max-w-2xl mx-auto opacity-90">
               Our multilingual staff is here to serve you in your preferred language, ensuring clear communication and
