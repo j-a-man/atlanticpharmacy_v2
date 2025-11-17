@@ -42,7 +42,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission Statement */}
-      <section className="pt-12 pb-12 px-6 lg:px-12 bg-muted/30">
+      <section className="pt-12 pb-12 px-6 lg:px-12">
         <div className="max-w-4xl mx-auto">
           <div className="space-y-12">
             <div className="text-center space-y-4">
@@ -74,7 +74,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="py-24 px-6 lg:px-12">
+      <section className="py-24 px-6 lg:px-12 bg-muted/30">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-xs tracking-[0.25em] text-muted-foreground mb-4">

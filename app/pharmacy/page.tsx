@@ -11,7 +11,7 @@ const carouselImages = [
     alt: "Professional pharmacy service counter",
   },
   {
-    url: "/image4.jpeg",
+    url: "/team_new.jpeg",
     alt: "Modern pharmacy interior with clean white shelves",
   }
 ]
