@@ -8,6 +8,7 @@ import "./globals.css"
 import { Navigation } from "@/components/navigation"
 import { Suspense } from "react"
 import { Footer } from "@/components/footer"
+import { ThemeProvider } from "@/components/theme-provider"
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -27,16 +28,22 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} ${playfair.variable} antialiased`}>
-        <Suspense fallback={<div>Loading...</div>}>
-          <Navigation />
-          {children}
-        </Suspense>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} ${playfair.variable} antialiased`} suppressHydrationWarning>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Suspense fallback={<div>Loading...</div>}>
+            <Navigation />
+            {children}
+          </Suspense>
 
-        <Footer />
-        
-        <Analytics />
+          <Footer />
+          <Analytics />
+        </ThemeProvider>
       </body>
     </html>
   )
